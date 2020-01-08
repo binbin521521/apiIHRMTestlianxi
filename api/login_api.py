@@ -10,7 +10,7 @@ class LoginApi:
 
     def __init__(self):
         self.login_url = app.HOST + "/api/sys/login"
-        self.headers = app.handlers
+        self.headers = app.HEADERS
 
     def login(self, mobile, password):
         """登录方法"""

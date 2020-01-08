@@ -29,6 +29,6 @@ class Login(unittest.TestCase):
         # 获取令牌，并拼接成以Bearer 开头的令牌字符串
         token = jsonData.get("data")
         # 保存令牌到全局变量
-        app.HEADERS["Authorization"] = 'Bearer' + token
+        app.HEADERS["Authorization"] = 'Bearer ' + token
         # 打印令牌
         logging.info("保存的令牌是：{}".format(app.HEADERS))
